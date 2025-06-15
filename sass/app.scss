@@ -6,3 +6,47 @@
 @use './pages/pages';
 @use './themes/themes';
 @use 'settings';
+
+
+
+body.page {
+  font-family: var(--family-font);
+  font-size: var(--font-size);
+  color: var(--primary-color);
+  margin: 0;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body::before{
+  content:'';
+  width: 40%;
+  background-color: var(--primary-color);
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  background-image: url(../img/Artzie..png);
+  background-repeat: no-repeat;
+  background-size: 180px;
+  background-position: right 150px ;
+}
+body::after{
+  content:'';
+  width: 0px;
+}
+
+
+ul li a{
+  text-decoration: none;
+}
+/* datos básicos página */
+
+/* inicio cabecera */
+
+
+
+/* Fin cabecera */
+
+/* 1º seccion */
+
