@@ -1,5 +1,7 @@
+@use "../abstracts/variables" as v;
+
 .page {
-  max-width: var(--max-width-page);
+  max-width: v.$max-width-page;
   box-sizing: border-box;
 }
 div.article{
@@ -8,9 +10,9 @@ div.article{
 
 section h1.hero-title{
   width: 900px;
-  font-family: var(--family-font-title);
-  font-size: var(--font-size-title);
-  color: var(--primary-color);
+  font-family: v.$family-font-title;
+  font-size: v.$font-size-title;
+  color: v.$primary-color;
   line-height: 1.2;
   padding: 0;
   font-weight: 400;
@@ -18,19 +20,20 @@ section h1.hero-title{
 
 section p.hero-subtitle{
   width: 600px;
-  font-family: var(--family-font);
-  font-size: var(--font-size-subsubtitle);
-  color: var(--tertiary-color);
+  font-family: v.$family-font;
+  font-size: v.$font-size-subsubtitle;
+  color: v.$tertiary-color;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 div.hero-buttons {
-  background-color: var(--secondary-color);
-  color: var(--neutro-color);
+  background-color: v.$secondary-color;
+  color: v.$neutro-color;
   padding: 12px 24px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: var(--font-size);
+  font-size: v.$font-size;
   font-weight: 400; 
   max-width: 200px;
 }
@@ -40,33 +43,34 @@ div.hero-buttons a{
   text-decoration: none;
 }
 h2{
-  font-family: var(--family-font-title);
+  font-family: v.$family-font-title;
   font-size: 32px;
   font-weight: 400;
-}
-
-
-article p.hero{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column; 
-
-  position: relative;
-  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
 }
+
 article{
   width: 850px;
   padding: 0;
   margin: 0;
- 
+  h2{
+    font-size: v.$font-size-subtitle;
+    font-weight: 400;
+    font-family: v.$family-font;
+    }
+    p.hero{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column; 
+
+        position: relative;
+        width: 150px;
+    }
 }
-article h2{
-  font-size: var(--font-size-subtitle);
-  font-weight: 400;
-  font-family: var(--family-font);
-}
+
 
 article div img{
   padding: 0;
@@ -89,31 +93,30 @@ article div.Colage{
 }
 
 div.colorUser{
-  background-color: var(--neutro-color);
+  background-color: v.$neutro-color;
   max-width: 600px;
   max-height: 235px;
 }
 
 
 div.BidNow {
-  background-color: var(--secondary-color);
+  background-color: v.$secondary-color;
   width: 260px;
   display: flex;
-}
-div.BidNow a{
-  text-decoration: none;
+       a{
+        text-decoration: none;
+       }
 }
 div.viewArtwork {
-  background-color: var(--neutro-color);
+  background-color: v.$neutro-color;
   width: 260px;
   display: flex;
-  font-size: var(--font-size);
-  font-family: var(--family-font);
-  color: var(--secondary-color)
-}
-div.viewArtwork a{
-   text-decoration: none;
-   
+  font-size: v.$font-size;
+  font-family: v.$family-font;
+  color: v.$secondary-color
+       a{
+          text-decoration: none;
+       }
 }
 img.people{
   width: 100px;
@@ -123,6 +126,6 @@ display: flex;
 text-align: center;
 padding: 20px;
 margin:0px;
-background-color: var(--neutro-color);
+background-color: v.$neutro-color;
 gap:20px;
 }

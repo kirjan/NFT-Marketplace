@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as v;
+
 @mixin breakpoint($point) {
   @if $point == largedesktop {
     @media (max-width: 1920px) and (min-width: 1441px) {
@@ -36,5 +38,28 @@
     @media (max-height: 550px) and (min-height: 0) {
       @content;
     }
+  }
+}
+
+@mixin button() {
+  display:inline-block;
+  background-color: v.$primary-color; 
+  padding: 10px 30px;
+  color: v.$neutro-color;
+  &:hover {
+    background-color:  v.$secondary-color;
+    color: v.$neutro-color;
+  }
+}
+
+@mixin button2() {
+  display:inline-block;
+  background-color: v.$secondary-color; 
+  padding: 10px 30px;
+  color: v.$neutro-color;
+  &:hover {
+    background-color: v.$neutro-color;
+    color: v.$primary-color;
+
   }
 }

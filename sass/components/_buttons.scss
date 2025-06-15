@@ -1,0 +1,24 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+.login{
+  margin-left: auto;
+  ul{
+    list-style:none;
+    display: flex;
+    gap:27px;
+    align-items: center;
+    a{
+      color: v.$neutro-color;
+    }
+  }
+  .SignUp{
+    @include m.button();
+
+  }
+  .SignIn{
+    @include m.button2();
+  }
+}
+
+

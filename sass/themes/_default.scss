@@ -1,6 +1,39 @@
-html * {
-}
- 
+@use "../abstracts/variables" as v;
+
 body {
     overflow-x: hidden;
-} 
+    &::before{
+        content:"";
+        width: 40%;
+        background-color: v.$primary-color;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        right: 0;
+        background-image: url(../img/Artzie..png);
+        background-repeat: no-repeat;
+        background-size: 180px;
+        background-position: right 150px ;
+        &::after{
+           content:'';
+           width: 0px;
+         }
+      }
+}
+
+body.page {
+  font-family: v.$family-font;
+  font-size: v.$font-size;
+  color: v.$primary-color;
+  margin: 0;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+ul li a{
+  text-decoration: none;
+}
