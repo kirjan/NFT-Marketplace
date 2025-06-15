@@ -53,7 +53,7 @@ header.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1900px;
+  max-width: 1700px;
   height: 100px;
 }
 
@@ -92,16 +92,38 @@ header aside ul {
 }
 
 .page {
-  max-width: 1900px;
+  max-width: 1700px;
   box-sizing: border-box;
 }
 
-div.article {
-  display: flex;
+main {
+  display: grid;
+  grid-template-columns: 55% 15%;
+  justify-self: left;
+  margin-left: 12px;
+}
+
+.hero-section {
+  grid-column: 1/span 1;
+}
+
+.hero-featured {
+  grid-column: 1/span 1;
+}
+
+.color {
+  grid-column: 2/span 2;
+  grid-row: 1/span 2;
+  z-index: 1;
+  justify-items: flex-start;
+}
+
+.colorUser {
+  grid-column: 2/span1;
 }
 
 section h1.hero-title {
-  width: 900px;
+  width: 730px;
   font-family: "Belgrano", sans-serif;
   font-size: 72px;
   color: #2E2F38;
@@ -144,7 +166,6 @@ h2 {
 }
 
 article {
-  width: 850px;
   padding: 0;
   margin: 0;
 }
@@ -162,17 +183,12 @@ article p.hero {
   width: 150px;
 }
 
-article div img {
-  padding: 0;
-  margin: 0;
-  width: 400px;
-}
-
-div.position {
+/*
+div.position{
   display: flex;
 }
 
-article div.Colage {
+article div.Colage{
   display: flex;
   justify-content: center;
   background-image: url(../img/Artzie..png);
@@ -182,50 +198,49 @@ article div.Colage {
   margin: 0;
 }
 
-div.colorUser {
-  background-color: #FFFFFF;
+div.colorUser{
+  background-color: v.$neutro-color;
   max-width: 600px;
   max-height: 235px;
 }
 
+
 div.BidNow {
-  background-color: #FA504D;
+  background-color: v.$secondary-color;
   width: 260px;
   display: flex;
+       a{
+        text-decoration: none;
+       }
 }
-div.BidNow a {
-  text-decoration: none;
-}
-
 div.viewArtwork {
-  background-color: #FFFFFF;
+  background-color: v.$neutro-color;
   width: 260px;
   display: flex;
-  font-size: 16px;
-  font-family: "poppins", sans-serif;
-  color: #FA504D a;
-  color-text-decoration: none;
+  font-size: v.$font-size;
+  font-family: v.$family-font;
+  color: v.$secondary-color
+       a{
+          text-decoration: none;
+       }
 }
-
-img.people {
+img.people{
   width: 100px;
 }
-
-div.valores {
-  display: flex;
-  text-align: center;
-  padding: 20px;
-  margin: 0px;
-  background-color: #FFFFFF;
-  gap: 20px;
-}
-
+div.valores{
+display: flex;
+text-align: center;
+padding: 20px;
+margin:0px;
+background-color: v.$neutro-color;
+gap:20px;
+}*/
 body {
   overflow-x: hidden;
 }
 body::before {
   content: "";
-  width: 40%;
+  width: 50%;
   background-color: #2E2F38;
   position: absolute;
   top: 0;

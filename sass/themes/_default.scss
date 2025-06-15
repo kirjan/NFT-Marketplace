@@ -4,7 +4,7 @@ body {
     overflow-x: hidden;
     &::before{
         content:"";
-        width: 40%;
+        width: 50%;
         background-color: v.$primary-color;
         position: absolute;
         top:0;
@@ -17,7 +17,7 @@ body {
         &::after{
            content:'';
            width: 0px;
-         }
+          }
       }
 }
 
